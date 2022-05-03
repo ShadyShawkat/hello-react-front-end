@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 import fetchMessagesAsync from './API/greetings';
 
 const initialState = {
-  message: ''
+  message: '',
 };
 
 const greetingsSlice = createSlice({
@@ -12,7 +12,7 @@ const greetingsSlice = createSlice({
   reducers: {
     greetingsSuccess: (state, action) => {
       state.message = action.payload.message;
-    }
+    },
   },
 });
 
